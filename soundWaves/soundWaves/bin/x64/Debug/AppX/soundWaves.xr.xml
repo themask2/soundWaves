@@ -74,8 +74,6 @@
     <RootType FullName="AudioVisualizer.SpectrumVisualizer">
       <RootProperty Name="Source" />
       <RootProperty Name="RelativeElementMargin" />
-      <RootProperty Name="UnlitElement" />
-      <RootProperty Name="ElementShadowColor" />
     </RootType>
     <RootType FullName="AudioVisualizer.DiscreteVUBar">
       <RootProperty Name="ChannelIndex" />

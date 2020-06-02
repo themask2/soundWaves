@@ -63,7 +63,7 @@
                 </Grid>
             </PivotItem>
             <PivotItem  Header="Spectrum">
-                <a:SpectrumVisualizer x:ConnectionId='9' x:Name="barspectrum" Source="{StaticResource spectrumSource}" RelativeElementMargin="0.1,0.2,0.1,0.2" UnlitElement="Black" ElementShadowColor="Aquamarine"></a:SpectrumVisualizer>
+                <a:SpectrumVisualizer x:ConnectionId='9' x:Name="barspectrum" Source="{StaticResource spectrumSource}" RelativeElementMargin="0.1,0.2,0.1,0.2"></a:SpectrumVisualizer>
             </PivotItem>
             <PivotItem Header="Custom draw">
                 <a:CustomVisualizer x:ConnectionId='8' Grid.Column="0" x:Name="spectrum" Source="{StaticResource source}"                                                                ></a:CustomVisualizer>
