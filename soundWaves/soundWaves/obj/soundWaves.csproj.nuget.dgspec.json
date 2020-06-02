@@ -40,6 +40,10 @@
             "Microsoft.NETCore.UniversalWindowsPlatform": {
               "target": "Package",
               "version": "[6.2.10, )"
+            },
+            "UWPAudioVisualizer": {
+              "target": "Package",
+              "version": "[1.0.38, )"
             }
           },
           "imports": [

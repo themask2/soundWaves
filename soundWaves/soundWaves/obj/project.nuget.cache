@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "BgXpxn9X5R+UmJQjDsYG8oOWCSQfyH+ll0Mnw2KeiTZ71N0HsfAtqwCmOH6GDYNYYUKEhpGfYYl/AjHbsnWxSA==",
+  "dgSpecHash": "C9dYYBD34F2E8hFqhB0sFMxTULFB2G0rmFsuIR5/siGZ7gb5EbLnLS6n9z/IAE6eSrH0y52cZBFbHQQWxYPj/Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\T-Gamer\\source\\repos\\soundWaves\\soundWaves\\soundWaves\\soundWaves.csproj",
   "expectedPackageFiles": [
@@ -26,7 +26,9 @@
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\runtime.win10-x86.microsoft.net.native.compiler\\2.2.8-rel-28605-00\\runtime.win10-x86.microsoft.net.native.compiler.2.2.8-rel-28605-00.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\runtime.win10-x86.microsoft.net.native.sharedlibrary\\2.2.7-rel-28605-00\\runtime.win10-x86.microsoft.net.native.sharedlibrary.2.2.7-rel-28605-00.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\\2.2.10\\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk.2.2.10.nupkg.sha512",
-    "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\\6.2.10\\runtime.win10-x86.microsoft.netcore.universalwindowsplatform.6.2.10.nupkg.sha512"
+    "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\\6.2.10\\runtime.win10-x86.microsoft.netcore.universalwindowsplatform.6.2.10.nupkg.sha512",
+    "C:\\Users\\T-Gamer\\.nuget\\packages\\uwpaudiovisualizer\\1.0.38\\uwpaudiovisualizer.1.0.38.nupkg.sha512",
+    "C:\\Users\\T-Gamer\\.nuget\\packages\\win2d.uwp\\1.23.0\\win2d.uwp.1.23.0.nupkg.sha512"
   ],
   "logs": []
 }

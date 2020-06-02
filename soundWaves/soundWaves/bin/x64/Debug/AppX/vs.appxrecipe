@@ -19,7 +19,7 @@
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
     <LayoutDir>C:\Users\T-Gamer\source\repos\soundWaves\soundWaves\soundWaves\bin\x64\Debug\AppX</LayoutDir>
-    <RegisteredManifestChecksum>4ECC402C3CA5812961E13EED544FBD37445EC8FD15B652593A7CEAD320F8CABA</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>5E5B9B89F036B5F292537BADD7BA3F90639AD987D99E72C26E44595873A28C77</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>6ee47b97-173f-44a3-8245-f60320126bcf_1.0.0.0_x64__pp2esvh3dm0t8</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>6ee47b97-173f-44a3-8245-f60320126bcf_pp2esvh3dm0t8!App</RegisteredUserModeAppID>
     <RegisteredPackageID>6ee47b97-173f-44a3-8245-f60320126bcf</RegisteredPackageID>
@@ -30,17 +30,33 @@
     <AppXManifest Include="C:\Users\T-Gamer\source\repos\soundWaves\soundWaves\soundWaves\bin\x64\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-06-01T19:43:55.020</Modified>
+      <Modified>2020-06-02T07:00:47.308</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\T-Gamer\source\repos\soundWaves\soundWaves\soundWaves\bin\x64\Debug\soundWaves.exe">
       <PackagePath>entrypoint\soundWaves.exe</PackagePath>
-      <Modified>2020-06-01T19:43:54.468</Modified>
+      <Modified>2020-06-02T07:00:46.386</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x64.microsoft.netcore.universalwindowsplatform\6.2.10\runtimes\win10-x64\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
       <Modified>2020-02-27T22:17:32.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\T-Gamer\.nuget\packages\uwpaudiovisualizer\1.0.38\runtimes\win10-x64\native\AudioVisualizer.dll">
+      <PackagePath>AudioVisualizer.dll</PackagePath>
+      <Modified>2019-01-09T11:12:54.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\T-Gamer\.nuget\packages\win2d.uwp\1.23.0\runtimes\win10-x64\native\Microsoft.Graphics.Canvas.dll">
+      <PackagePath>Microsoft.Graphics.Canvas.dll</PackagePath>
+      <Modified>2018-05-17T23:17:14.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\T-Gamer\.nuget\packages\uwpaudiovisualizer\1.0.38\lib\uap10.0\AudioVisualizer.winmd">
+      <PackagePath>AudioVisualizer.winmd</PackagePath>
+      <Modified>2019-01-09T11:12:54.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\T-Gamer\.nuget\packages\win2d.uwp\1.23.0\lib\uap10.0\Microsoft.Graphics.Canvas.winmd">
+      <PackagePath>Microsoft.Graphics.Canvas.winmd</PackagePath>
+      <Modified>2018-05-17T23:15:26.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\bin\10.0.18362.0\XamlCompiler\Microsoft.UI.Xaml.Markup.winmd">
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
@@ -48,53 +64,57 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\T-Gamer\source\repos\soundWaves\soundWaves\soundWaves\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
-      <Modified>2020-06-01T17:44:05.127</Modified>
+      <Modified>2020-06-02T00:19:22.162</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\T-Gamer\source\repos\soundWaves\soundWaves\soundWaves\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
-      <Modified>2020-05-29T21:35:30.229</Modified>
+      <Modified>2020-06-02T00:19:22.155</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\T-Gamer\source\repos\soundWaves\soundWaves\soundWaves\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-05-29T21:35:30.229</Modified>
+      <Modified>2020-06-02T00:19:22.156</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\T-Gamer\source\repos\soundWaves\soundWaves\soundWaves\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-05-29T21:35:30.229</Modified>
+      <Modified>2020-06-02T00:19:22.157</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\T-Gamer\source\repos\soundWaves\soundWaves\soundWaves\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-05-29T21:35:30.229</Modified>
+      <Modified>2020-06-02T00:19:22.157</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\T-Gamer\source\repos\soundWaves\soundWaves\soundWaves\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-05-29T21:35:30.229</Modified>
+      <Modified>2020-06-02T00:19:22.158</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\T-Gamer\source\repos\soundWaves\soundWaves\soundWaves\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-05-29T21:35:30.229</Modified>
+      <Modified>2020-06-02T00:19:22.158</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\T-Gamer\source\repos\soundWaves\soundWaves\soundWaves\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-05-29T21:35:30.229</Modified>
+      <Modified>2020-06-02T00:19:22.159</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\T-Gamer\source\repos\soundWaves\soundWaves\soundWaves\bin\x64\Debug\soundWaves.xr.xml">
       <PackagePath>soundWaves.xr.xml</PackagePath>
-      <Modified>2020-06-01T19:34:08.517</Modified>
+      <Modified>2020-06-02T07:00:46.148</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\T-Gamer\source\repos\soundWaves\soundWaves\soundWaves\bin\x64\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2020-06-01T19:36:17.418</Modified>
+      <Modified>2020-06-02T07:00:46.174</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\T-Gamer\source\repos\soundWaves\soundWaves\soundWaves\bin\x64\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2020-06-01T19:36:17.418</Modified>
+      <Modified>2020-06-02T07:00:46.174</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\T-Gamer\source\repos\soundWaves\soundWaves\soundWaves\bin\x64\Debug\Views\MediaPlayerPage.xbf">
+      <PackagePath>Views\MediaPlayerPage.xbf</PackagePath>
+      <Modified>2020-06-02T07:00:46.174</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.18362.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -102,11 +122,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\T-Gamer\source\repos\soundWaves\soundWaves\soundWaves\bin\x64\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2020-06-01T19:15:34.796</Modified>
+      <Modified>2020-06-02T05:06:35.956</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\T-Gamer\source\repos\soundWaves\soundWaves\soundWaves\bin\x64\Debug\Core\soundWaves.exe">
       <PackagePath>soundWaves.exe</PackagePath>
-      <Modified>2020-06-01T19:43:55.016</Modified>
+      <Modified>2020-06-02T07:00:47.284</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

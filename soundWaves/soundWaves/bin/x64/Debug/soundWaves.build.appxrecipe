@@ -31,6 +31,18 @@
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x64.microsoft.netcore.universalwindowsplatform\6.2.10\runtimes\win10-x64\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\T-Gamer\.nuget\packages\uwpaudiovisualizer\1.0.38\runtimes\win10-x64\native\AudioVisualizer.dll">
+      <PackagePath>AudioVisualizer.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\T-Gamer\.nuget\packages\win2d.uwp\1.23.0\runtimes\win10-x64\native\Microsoft.Graphics.Canvas.dll">
+      <PackagePath>Microsoft.Graphics.Canvas.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\T-Gamer\.nuget\packages\uwpaudiovisualizer\1.0.38\lib\uap10.0\AudioVisualizer.winmd">
+      <PackagePath>AudioVisualizer.winmd</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\T-Gamer\.nuget\packages\win2d.uwp\1.23.0\lib\uap10.0\Microsoft.Graphics.Canvas.winmd">
+      <PackagePath>Microsoft.Graphics.Canvas.winmd</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\bin\10.0.18362.0\XamlCompiler\Microsoft.UI.Xaml.Markup.winmd">
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
     </AppxPackagedFile>
@@ -72,6 +84,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\T-Gamer\source\repos\soundWaves\soundWaves\soundWaves\bin\x64\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\T-Gamer\source\repos\soundWaves\soundWaves\soundWaves\bin\x64\Debug\Views\MediaPlayerPage.xbf">
+      <PackagePath>Views\MediaPlayerPage.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.18362.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
