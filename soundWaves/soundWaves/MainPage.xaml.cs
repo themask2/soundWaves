@@ -1,6 +1,11 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Diagnostics;
+using System.Threading;
 using System.Threading.Tasks;
 using Windows.Media.Audio;
+using Windows.Media.MediaProperties;
+using Windows.Media.Transcoding;
 using Windows.Storage;
 using Windows.Storage.Pickers;
 using Windows.UI.Xaml;
@@ -10,15 +15,20 @@ using Windows.UI.Xaml.Controls;
 
 namespace soundWaves
 {
+
     /// <summary>
     /// Uma página vazia que pode ser usada isoladamente ou navegada dentro de um Quadro.
     /// </summary>
+    /// 
     public sealed partial class MainPage : Page
     {
 
         AudioFileInputNode _fileInputNode;
         AudioGraph _graph;
         AudioDeviceOutputNode _deviceOutputNode;
+
+        private StorageFile currentFile;
+        private PlottingGraphImg imgFile;
 
         public MainPage()
         {
@@ -43,6 +53,64 @@ namespace soundWaves
             {
                 this.textBlock.Text = "Operação Cancelada.";
             }
+        }
+
+        private async void ChooseFile_Click(object sender, RoutedEventArgs e)
+        {
+            var picker = new Windows.Storage.Pickers.FileOpenPicker();
+            picker.SuggestedStartLocation = Windows.Storage.Pickers.PickerLocationId.MusicLibrary;
+            picker.FileTypeFilter.Add(".mp4");
+            picker.FileTypeFilter.Add(".mp3");
+            picker.FileTypeFilter.Add(".wav");
+            StorageFile file = await picker.PickSingleFileAsync();
+            await ConvertToWaveFile(file);
+        }
+
+        public async Task ConvertToWaveFile(StorageFile sourceFile)
+        {
+            MediaTranscoder transcoder = new MediaTranscoder();
+            MediaEncodingProfile profile = MediaEncodingProfile.CreateWav(AudioEncodingQuality.Medium);
+            CancellationTokenSource cts = new CancellationTokenSource(); //Create temporary file in temporary folder
+            string fileName = String.Format("TempFile_{0}.wav", Guid.NewGuid());
+            StorageFile temporaryFile = await ApplicationData.Current.TemporaryFolder.CreateFileAsync(fileName);
+            currentFile = temporaryFile;
+            if (sourceFile == null || temporaryFile == null)
+            {
+                return;
+            }
+            try
+            {
+                var preparedTranscodeResult = await transcoder.PrepareFileTranscodeAsync(sourceFile, temporaryFile, profile);
+                if (preparedTranscodeResult.CanTranscode)
+                {
+                    var progress = new Progress<double>((percent) => { Debug.WriteLine("Converting file: " + percent + "%"); });
+                    await preparedTranscodeResult.TranscodeAsync().AsTask(cts.Token, progress);
+                }
+                else
+                {
+                    Debug.WriteLine("Error: Convert fail");
+                }
+            }
+            catch
+            {
+                Debug.WriteLine("Error: Exception in ConvertToWaveFile");
+            }
+        }
+
+        private async void BuildAndSaveImageFile_Click(object sender, RoutedEventArgs e)
+        {
+            WavFile wavFile = new WavFile(currentFile.Path.ToString());
+            imgFile = new PlottingGraphImg(wavFile, 1000, 100);
+            FileSavePicker fileSavePicker = new FileSavePicker();
+            fileSavePicker.SuggestedStartLocation = PickerLocationId.PicturesLibrary;
+            fileSavePicker.FileTypeChoices.Add("JPEG files", new List<string>() { ".jpg" });
+            fileSavePicker.SuggestedFileName = "image";
+            var outputFile = await fileSavePicker.PickSaveFileAsync();
+            if (outputFile == null)
+            { // The user cancelled the picking operation 
+                return;
+            }
+            await imgFile.SaveGraphicFile(outputFile);
         }
 
         private async void Play_OnClick(object sender, RoutedEventArgs e)
