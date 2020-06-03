@@ -9,11 +9,11 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <StackPanel>
+        <!--<StackPanel>
             <Button Height="40" Width="150" Content="Arquivo de Audio" HorizontalAlignment="Left" Margin="20, 60, 0, 0" VerticalAlignment="Top" Click="NewFileHandler" />
             <TextBlock x:Name="textBlock" Text="Nenhum Arquivo Selecionado..." FontSize="16" Foreground="Black" Margin="20, 10, 0, 0"   />
-        </StackPanel>
-        <Button Name="Play" Click="Play_OnClick">Play</Button>
+        </StackPanel>-->
+        <!--<Button Name="Play" Click="Play_OnClick">Play</Button>-->
         <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
             <Button Width="250" Height="50" Content="Choose Audio File" Click="ChooseFile_Click" Margin="0,10,0,10"/>
             <Button Width="250" Height="50" Background="Green" Content="Build And Save Image File" Click="BuildAndSaveImageFile_Click" Margin="0,10,0,10"/>

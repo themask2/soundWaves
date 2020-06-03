@@ -35,25 +35,25 @@ namespace soundWaves
             this.InitializeComponent();
         }
 
-        private async void NewFileHandler(object sender, RoutedEventArgs e)
-        {
-            var picker = new Windows.Storage.Pickers.FileOpenPicker();
-            picker.ViewMode = Windows.Storage.Pickers.PickerViewMode.Thumbnail;
-            picker.SuggestedStartLocation = Windows.Storage.Pickers.PickerLocationId.MusicLibrary;
-            picker.FileTypeFilter.Add(".wma");
-            picker.FileTypeFilter.Add(".mp3");
+        //private async void NewFileHandler(object sender, RoutedEventArgs e)
+        //{
+        //    var picker = new Windows.Storage.Pickers.FileOpenPicker();
+        //    picker.ViewMode = Windows.Storage.Pickers.PickerViewMode.Thumbnail;
+        //    picker.SuggestedStartLocation = Windows.Storage.Pickers.PickerLocationId.MusicLibrary;
+        //    picker.FileTypeFilter.Add(".wma");
+        //    picker.FileTypeFilter.Add(".mp3");
 
-            Windows.Storage.StorageFile file = await picker.PickSingleFileAsync();
-            if (file != null)
-            {
-                // Application now has read/write access to the picked file
-                this.textBlock.Text = "Audio Selecionado: " + file.Name;
-            }
-            else
-            {
-                this.textBlock.Text = "Operação Cancelada.";
-            }
-        }
+        //    Windows.Storage.StorageFile file = await picker.PickSingleFileAsync();
+        //    if (file != null)
+        //    {
+        //        // Application now has read/write access to the picked file
+        //        this.textBlock.Text = "Audio Selecionado: " + file.Name;
+        //    }
+        //    else
+        //    {
+        //        this.textBlock.Text = "Operação Cancelada.";
+        //    }
+        //}
 
         private async void ChooseFile_Click(object sender, RoutedEventArgs e)
         {
